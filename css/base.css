@@ -14,7 +14,7 @@
 
 :root {
   /* Colores principales */
-  --color-primary: #0063e5;
+  --color-primary: #ce4d4d;
   --color-secondary: #f9f9f9;
   --color-dark: #040714;
   --color-dark-blue: #1a1d29;
@@ -141,10 +141,6 @@ button:hover {
   font-size: var(--font-size-md);
   text-transform: uppercase;
   letter-spacing: 1px;
-}
-
-.btn-primary:hover {
-  background-color: #0053c7;
 }
 
 .btn-secondary {
