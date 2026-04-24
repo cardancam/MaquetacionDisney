@@ -102,15 +102,14 @@
 }
 
 .search-input {
-  width: 200px;
-  height: 36px;
-  padding: 8px 40px 8px 12px;
-  border: 1px solid #d1d1d1;
-  border-radius: 4px;
+  width: 260px;
+  height: 40px;
+  padding: 8px 44px 8px 16px;
+  border: 1.5px solid #d1d1d1;
+  border-radius: 5px;
   font-size: 14px;
   color: #040714;
-  background-color: #ffffff;
-  transition: all 0.2s ease;
+  background-color: #f2f2f2;
   outline: none;
 }
 
@@ -119,25 +118,26 @@
 }
 
 .search-input:focus {
-  border-color: #040714;
-  box-shadow: 0 0 0 1px #040714;
+  border-color: #1a78c2;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 1px #1a78c2;
 }
 
 .search-button {
   position: absolute;
-  right: 0;
+  right: 4px;
   top: 50%;
   transform: translateY(-50%);
   background-color: transparent;
   border: none;
-  color: #040714;
-  font-size: 16px;
-  padding: 8px 12px;
+  color: #1a78c2;
+  padding: 6px 10px;
   cursor: pointer;
   transition: opacity 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
 }
 
 .search-button:hover {
@@ -147,21 +147,19 @@
 .btn-login {
   background-color: transparent;
   color: #040714;
-  padding: 8px 16px;
-  border: 1px solid #040714;
-  border-radius: 4px;
+  padding: 8px 20px;
+  border: none;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: color 0.2s ease;
   white-space: nowrap;
 }
 
 .btn-login:hover {
-  background-color: #040714;
-  color: #ffffff;
+  color: #1a78c2;
 }
 
 /* ===================================

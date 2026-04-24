@@ -1,88 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disney | Página Oficial</title>
-    <link rel="stylesheet" href="../css/banner.css">
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/sections.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disney | Página Oficial</title>
+  <link rel="stylesheet" href="../css/banner.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/sections.css">
 </head>
+
 <body>
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="navbar-container">
       <img src="../images/logo.png" alt="Disney Logo" class="navbar-logo">
       <ul class="navbar-menu">
-        <li class="navbar-item">SHOP</li>
-        <li class="navbar-item">MOVIES & SHOWS</li>
         <li class="navbar-item">DISNEY+</li>
-        <li class="navbar-item">PARKS</li>
+        <li class="navbar-item">PARKS & TRAVEL</li>
+        <li class="navbar-item">MOVIES</li>
+        <li class="navbar-item">SHOP</li>
         <li class="navbar-item">MORE</li>
       </ul>
       <div class="navbar-actions">
-        <button class="btn-search" aria-label="Buscar">🔍</button>
         <button class="btn-login">LOG IN</button>
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Search" aria-label="Search">
+          <button class="search-button" aria-label="Buscar">🔍</button>
+        </div>
       </div>
     </div>
   </nav>
 
   <!-- BANNER PRINCIPAL - SNOW WHITE -->
   <section class="banner">
-  <div class="banner-content">
-    <img src="../images/snow-white.png" alt="Snow White" class="banner-logo">
-    <p class="banner-subtitle">Only in Theaters March 21</p>
-    <button class="btn-primary">GET TICKETS</button>
-    <button class="btn-secondary">WATCH TRAILER</button>
-  </div>
-</section>
+    <div class="banner-content">
+      <img src="../images/snow-white.png" alt="Snow White" class="banner-logo">
+      <p class="banner-subtitle">Experience <em>Snow White</em>, now playing only in theaters!</p>
+      <div class="banner-buttons">
+        <button class="btn-primary">Get Tickets Now</button>
+        <button class="btn-secondary">Learn More</button>
+      </div>
+    </div>
+  </section>
 
   <main>
     <!-- SECCIÓN SHOP -->
-   <section id="shop" class="shop-section">
-  <div class="container"> <!-- 👈 SOLO AGREGAS ESTO -->
+    <section id="shop" class="shop-section">
+      <div class="container"> <!-- 👈 SOLO AGREGAS ESTO -->
 
-    <div class="shop-grid">
-      <div class="shop-card">
-        <img src="../images/shop-image-1.png" alt="Shop Item 1">
-        <div class="shop-card-content">
-          <h3>A Whole New World</h3>
-          <p>Your Jasmine Moment Awaits you...</p>
-          <span class="shop-link">SHOP NOW</span>
+        <div class="shop-grid">
+          <div class="shop-card">
+            <img src="../images/shop-image-1.png" alt="Shop Item 1">
+            <div class="shop-card-content">
+              <h3>A Whole New World</h3>
+              <p>Your Jasmine Moment Awaits you...</p>
+              <span class="shop-link">SHOP NOW</span>
+            </div>
+          </div>
+
+          <div class="shop-card">
+            <img src="../images/shop-image-2.png" alt="Shop Item 2">
+            <div class="shop-card-content">
+              <h3>The Best of the Last Airbender</h3>
+              <p>Celebrate Aang's Journey with Exclusive Collectibles</p>
+              <span class="shop-link">SHOP NOW</span>
+            </div>
+          </div>
+
+          <div class="shop-card">
+            <img src="../images/shop-image-3.png" alt="Shop Item 3">
+            <div class="shop-card-content">
+              <h3>Make It Sew</h3>
+              <p>DIY Embroidery Kits for Disney Fans</p>
+              <span class="shop-link">SHOP NOW</span>
+            </div>
+          </div>
+
+          <div class="shop-card">
+            <img src="../images/shop-image-4.png" alt="Shop Item 4">
+            <div class="shop-card-content">
+              <h3>A Whole Lotta Attitude</h3>
+              <p>Stitch Styles for the Whole Family</p>
+              <span class="shop-link">SHOP NOW</span>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="shop-card">
-        <img src="../images/shop-image-2.png" alt="Shop Item 2">
-        <div class="shop-card-content">
-          <h3>The Best of the Last Airbender</h3>
-          <p>Celebrate Aang's Journey with Exclusive Collectibles</p>
-          <span class="shop-link">SHOP NOW</span>
-        </div>
       </div>
-
-      <div class="shop-card">
-        <img src="../images/shop-image-3.png" alt="Shop Item 3">
-        <div class="shop-card-content">
-          <h3>Make It Sew</h3>
-          <p>DIY Embroidery Kits for Disney Fans</p>
-          <span class="shop-link">SHOP NOW</span>
-        </div>
-      </div>
-
-      <div class="shop-card">
-        <img src="../images/shop-image-4.png" alt="Shop Item 4">
-        <div class="shop-card-content">
-          <h3>A Whole Lotta Attitude</h3>
-          <p>Stitch Styles for the Whole Family</p>
-          <span class="shop-link">SHOP NOW</span>
-        </div>
-      </div>
-    </div>
-
-  </div> 
-</section>
+    </section>
 
     <!-- SECCIÓN EXPLORE MORE DISNEY+ -->
     <section id="disney-plus" class="disney-plus-section">
@@ -149,7 +156,8 @@
           <img src="../images/disney-parks-1.png" alt="Disneyland Resort">
           <div class="park-card-content">
             <h3>DISNEYLAND RESORT</h3>
-            <p>Enjoy a magical stay at one of the Disneyland Resort Hotels and discover all the special perks that come with it</p>
+            <p>Enjoy a magical stay at one of the Disneyland Resort Hotels and discover all the special perks that come
+              with it</p>
             <span class="link-button">LEARN MORE</span>
           </div>
         </div>
@@ -238,4 +246,5 @@
     </div>
   </footer>
 </body>
+
 </html>
