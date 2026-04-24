@@ -1,0 +1,131 @@
+/* ===================================
+   FOOTER - Disney Style
+   =================================== */
+
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 20px 30px;
+  border-top: 1px solid #e8e8e8;
+  margin-top: 60px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ===================================
+   LOGO DEL FOOTER
+   =================================== */
+
+.footer-logo {
+  margin-bottom: 25px;
+}
+
+.footer-logo img {
+  width: 80px;
+  height: auto;
+  opacity: 0.8;
+}
+
+/* ===================================
+   ENLACES DEL FOOTER
+   =================================== */
+
+.footer-links-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  color: #6e6e6e;
+  font-size: 11px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.footer-link:hover {
+  color: #040714;
+  text-decoration: underline;
+}
+
+/* ===================================
+   COPYRIGHT
+   =================================== */
+
+.footer-copyright {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e8e8e8;
+  width: 100%;
+}
+
+.footer-copyright p {
+  color: #6e6e6e;
+  font-size: 10px;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* ===================================
+   RESPONSIVE
+   =================================== */
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 15px 25px;
+  }
+  
+  .footer-logo img {
+    width: 70px;
+  }
+  
+  .footer-links-row {
+    gap: 6px 15px;
+  }
+  
+  .footer-link {
+    font-size: 10px;
+  }
+  
+  .footer-copyright p {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 25px 10px 20px;
+  }
+  
+  .footer-logo img {
+    width: 60px;
+  }
+  
+  .footer-links-row {
+    gap: 5px 12px;
+  }
+  
+  .footer-link {
+    font-size: 9px;
+  }
+  
+  .footer-copyright {
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+  
+  .footer-copyright p {
+    font-size: 8px;
+  }
+}
