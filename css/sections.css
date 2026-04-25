@@ -1,48 +1,63 @@
-/* CONTENEDOR GLOBAL */
+
 .container {
   max-width: 1200px;
   margin: auto;
   padding: 0 20px;
 }
 
-/* ================= SHOP (MORADO) ================= */
 .shop-section {
   background: #6b5ca5;
   padding: 60px 0;
+
+  width: 100%;
 }
 
 .shop-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  max-width: 1400px;
+  gap: 40px;
+
+  max-width: 1400px;   
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 120px; 
 }
 
 .shop-card {
   display: flex;
+   transform: scale(1.05);
   flex-direction: column;
+  width: 100%;
 }
 
-/* 🔥 ARREGLO IMÁGENES (ANTES SE CORTABAN) */
 .shop-card img {
   width: 100%;
-  height: auto;
+  height: 220px;
+  object-fit: cover;
   display: block;
 }
 
 .shop-card-content {
   background: #e8d67a;
-  padding: 24px 20px;
+  padding: 25px;
   text-align: center;
+
+  width: 100%;   
 }
 
-/* ================= DISNEY+ (AZUL) ================= */
+.shop-card h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.shop-card p {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
 .disney-plus-section {
   background: #0f4c5c;
   color: white;
-  padding: 60px 0;
+  padding: 0 80px;
   text-align: center;
 }
 
@@ -51,25 +66,22 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 80px;
+  padding: 0 80px; 
 }
 
-/* 🔥 ARREGLO CLAVE (QUITAMOS CORTE) */
 .disney-plus-card img {
   width: 100%;
-  height: auto;
-  display: block;
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
 
-/* ================= TITULOS ================= */
 .section-title {
   text-align: center;
   margin-bottom: 40px;
+  font-size: 28px;   
+  font-weight: 600;  
 }
 
-/* ================= COMING ================= */
 .coming-section {
   background: #f5f5f5;
   padding: 100px 0;
@@ -83,14 +95,41 @@
   padding: 0 80px;
 }
 
-/* 🔥 TAMBIÉN SIN CORTE */
 .coming-card img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* ================= VACATION ================= */
+
+.coming-card h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+
+.coming-card p {
+  font-size: 25px;
+  color: #555;
+}
+
+.disney-plus-card p {
+  font-size: 35px;   
+  margin-top: 12px;
+  line-height: 1.4;
+}
+
+.disney-plus-card .link-button {
+  font-size: 25px;   
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-top: 6px;
+  color: #f5f5f5;
+}
+
 .vacation-section {
   padding: 80px 0;
   text-align: center;
@@ -103,7 +142,6 @@
   padding: 0 80px;
 }
 
-/* 🔥 SIN CORTE */
 .vacation-card img {
   width: 100%;
   height: auto;
@@ -114,7 +152,28 @@
   padding: 20px;
 }
 
-/* ================= MORE ================= */
+.vacation-card-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+
+.vacation-card-content p {
+  font-size: 30px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+
+.vacation-card-content .link-button {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #090909;
+}
+
 .more-section {
   background: url('../images/more-background.jpeg') left center/cover no-repeat;
 }
@@ -130,6 +189,35 @@
   padding: 60px;
 }
 
+
+.more-info h2 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+.more-offer h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+
+.more-offer p {
+  font-size: 25px;
+  line-height: 1.5;
+  color: #5e0ce1;
+}
+
+
+.btn-more {
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .btn-more {
   background: #7b5ba1;
   color: white;
@@ -137,7 +225,6 @@
   border-radius: 30px;
 }
 
-/* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
   .shop-grid {
     grid-template-columns: repeat(2, 1fr);
